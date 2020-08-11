@@ -26,6 +26,18 @@
 
 @end
 
+/**
+ * Image Downloading priority.
+ * Use PriorityImmediate to download images at the highest priority.
+ * Use PriorityPrefetch to prefetch images at a lower priority.
+ * The priority logic is up to each @RCTImageLoaderProtocol implementation
+ */
+typedef NS_ENUM(NSUInteger, RCTImageLoaderPriority) {
+  RCTImageLoaderPriorityImmediate,
+  RCTImageLoaderPriorityPrefetch
+};
+
+
 @protocol RCTImageLoaderProtocol<RCTURLRequestHandler>
 
 /**

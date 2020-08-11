@@ -330,7 +330,7 @@ static UIImage *RCTResizeImageIfNeeded(UIImage *image,
                                 priority:priority
                            progressBlock:nil
                         partialLoadBlock:nil
-                         completionBlock:callback];
+                         completionBlock:completionBlock];
 }
 
 - (nullable RCTImageLoaderCancellationBlock)loadImageWithURLRequest:(NSURLRequest *)imageURLRequest
